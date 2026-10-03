@@ -25,6 +25,7 @@
     .hero .wrap{position:relative;min-height:430px;display:flex;align-items:center}.hero-content{width:59%;max-width:690px}.hero-stats{position:absolute;right:3%;top:50%;transform:translateY(-50%);width:min(375px,36%);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;color:#fff;font:10px var(--mono);text-transform:uppercase}.hero-stats span{min-height:76px;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 10px;background:#19050bdb;border:1px solid #ff5d75a6;border-radius:8px;backdrop-filter:blur(8px);box-shadow:0 8px 26px #10030866;text-align:center}.hero-stats b{font-size:25px;font-weight:800;color:#ff526b;letter-spacing:-1px}.hero-caption{margin-top:17px;color:#d6a3ad;font:9px var(--mono);letter-spacing:.9px;text-transform:uppercase}.hero-telegram{display:inline-flex;margin-top:9px;color:#ff647a;font:10px var(--mono);letter-spacing:.5px;text-decoration:none;transition:color .18s}.hero-telegram:hover{color:#fff;text-decoration:underline}
     @media(max-width:860px){.hero .wrap{min-height:400px}.hero-content{width:58%}.hero-stats{right:0;width:38%;gap:8px}.hero-stats span{min-height:68px;font-size:8px;padding:9px 6px}.hero-stats b{font-size:21px}}
     @media(max-width:560px){.hero .wrap{min-height:0;display:block}.hero-content{width:100%;max-width:100%}.hero-stats{position:relative;right:auto;top:auto;transform:none;width:100%;max-width:380px;margin:29px 0 0;gap:8px}.hero-stats span{min-height:61px}.hero-stats b{font-size:20px}.hero-caption{font-size:8px}}  .card.top-pick{position:relative;border:2px solid #ff405c;box-shadow:0 0 0 1px #ff405c55,0 12px 30px #ff173b30}.top-pick-badge,.top-visual-badge{position:absolute;top:10px;right:10px;z-index:2;padding:6px 9px;background:#e41237;color:#fff;border:1px solid #ff8495;border-radius:4px;font:700 10px var(--mono);letter-spacing:1px;box-shadow:0 4px 14px #09000688}.visual-card.top-visual{position:relative;border:2px solid #ff405c;box-shadow:0 0 0 2px #ff405c35,0 16px 45px #ed183844}.top-visual-badge{top:-12px;right:18px}
+.arcade-open{position:fixed;right:22px;bottom:22px;z-index:8;display:inline-flex;align-items:center;gap:9px;padding:12px 16px;border:1px solid #ff8293;border-radius:999px;background:linear-gradient(115deg,#fa2445,#b90b2c);color:#fff;font:700 11px var(--mono);letter-spacing:.5px;box-shadow:0 8px 25px #100308aa,0 0 22px #ff173b45;cursor:pointer;transition:transform .18s,box-shadow .18s}.arcade-open:hover{transform:translateY(-3px);box-shadow:0 12px 30px #100308bb,0 0 28px #ff173b70}.tetris-dialog{width:min(94vw,620px);max-height:92vh;padding:0;border:1px solid #ff647a;border-radius:14px;background:#17050b;color:#fff3f5;box-shadow:0 24px 90px #050104dd}.tetris-dialog::backdrop{background:#090207c9;backdrop-filter:blur(5px)}.tetris-shell{padding:19px}.tetris-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.tetris-head h2{margin:0;color:#fff;font-size:23px;letter-spacing:-.7px}.tetris-head p{margin:4px 0 0;color:#d5a1ac;font:9px var(--mono);letter-spacing:.8px}.tetris-close{width:36px;height:36px;border:1px solid #773044;border-radius:8px;background:#2a0b15;color:#fff;font-size:25px;line-height:1;cursor:pointer}.tetris-layout{display:grid;grid-template-columns:minmax(180px,240px) 1fr;gap:18px;align-items:start}.tetris-board{display:block;width:100%;max-height:65vh;aspect-ratio:1/2;background:#0c0307;border:1px solid #6e2032;border-radius:6px;image-rendering:pixelated}.tetris-side{display:grid;gap:11px}.tetris-stat{padding:11px;border:1px solid #602035;border-radius:8px;background:#230913}.tetris-stat small{display:block;color:#cb929f;font:9px var(--mono);letter-spacing:.8px;text-transform:uppercase}.tetris-stat strong{display:block;margin-top:4px;color:#ff6179;font-size:23px}.tetris-control-note{color:#d0a4ad;font:10px/1.5 var(--mono)}.tetris-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.tetris-actions button,.tetris-pad button{min-height:38px;border:1px solid #9e3048;border-radius:7px;background:#3a0d1b;color:#fff;font:700 10px var(--mono);cursor:pointer}.tetris-actions button:hover,.tetris-pad button:hover{background:#cf1236}.tetris-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.tetris-pad button{min-height:42px;font-size:15px;touch-action:manipulation}.tetris-pad [data-tetris="rotate"]{grid-column:2}.tetris-pad [data-tetris="left"]{grid-column:1;grid-row:2}.tetris-pad [data-tetris="down"]{grid-column:2;grid-row:2}.tetris-pad [data-tetris="right"]{grid-column:3;grid-row:2}.tetris-pad [data-tetris="drop"]{grid-column:1/4;font-size:10px}.tetris-status{min-height:18px;color:#ff8293;font:10px var(--mono)}@media(max-width:520px){.arcade-open{right:13px;bottom:13px;padding:10px 13px}.tetris-shell{padding:13px}.tetris-layout{grid-template-columns:minmax(0,1fr) 120px;gap:10px}.tetris-board{max-height:60vh}.tetris-actions{grid-template-columns:1fr}.tetris-head h2{font-size:20px}}
 </style>
 </head>
 <body>
@@ -124,6 +125,22 @@
     <div class="dialog-foot"><span id="gallery-count">Загружаем изображения…</span><a class="detail-source" id="detail-source" target="_blank" rel="noopener noreferrer">Страница проекта ↗</a></div>
   </dialog>
   <footer class="footer"><div class="wrap footer-inner"><span><b>CraftHub</b> — подборка дополнений для Minecraft</span><span>Minecraft — товарный знак Microsoft. Сайт не связан с Mojang или Microsoft.</span></div></footer>
+  <button class="arcade-open" id="tetris-open" type="button" aria-haspopup="dialog">🎮 <span>Играть в тетрис</span></button>
+  <dialog class="tetris-dialog" id="tetris-dialog" aria-labelledby="tetris-title">
+    <div class="tetris-shell">
+      <header class="tetris-head"><div><h2 id="tetris-title">Тетрис</h2><p>СОБЕРИ ЛИНИИ · НАБЕРИ ОЧКИ</p></div><button class="tetris-close" type="button" aria-label="Закрыть тетрис">×</button></header>
+      <div class="tetris-layout">
+        <canvas class="tetris-board" id="tetris-board" width="240" height="480" aria-label="Игровое поле тетриса"></canvas>
+        <div class="tetris-side">
+          <div class="tetris-stat"><small>Очки</small><strong id="tetris-score">0</strong></div><div class="tetris-stat"><small>Линии</small><strong id="tetris-lines">0</strong></div>
+          <div class="tetris-actions"><button type="button" id="tetris-start">Новая игра</button><button type="button" id="tetris-pause">Пауза</button></div>
+          <div class="tetris-control-note">Клавиши: ← → движение, ↑ поворот, ↓ быстрее, пробел — сбросить.</div>
+          <div class="tetris-pad" aria-label="Кнопки управления"><button type="button" data-tetris="rotate" aria-label="Повернуть">↻</button><button type="button" data-tetris="left" aria-label="Влево">←</button><button type="button" data-tetris="down" aria-label="Вниз">↓</button><button type="button" data-tetris="right" aria-label="Вправо">→</button><button type="button" data-tetris="drop">Сбросить вниз</button></div>
+          <div class="tetris-status" id="tetris-status" aria-live="polite">Нажми «Новая игра», чтобы начать.</div>
+        </div>
+      </div>
+    </div>
+  </dialog>
   <script>
     const dialog = document.getElementById('detail-dialog');
     const gallery = document.getElementById('detail-gallery');
@@ -215,6 +232,35 @@
       packFilters.forEach(item => item.classList.toggle('active', item === button));
       packCards.forEach(card => card.hidden = button.dataset.packFilter !== 'all' && card.dataset.packCategory !== button.dataset.packFilter);
     }));
+    const tetrisDialog = document.getElementById('tetris-dialog');
+    const tetrisCanvas = document.getElementById('tetris-board');
+    const tctx = tetrisCanvas.getContext('2d');
+    const tScore = document.getElementById('tetris-score');
+    const tLines = document.getElementById('tetris-lines');
+    const tStatus = document.getElementById('tetris-status');
+    const tCols = 10, tRows = 20, tCell = 24;
+    const tColors = {1:'#ff526b',2:'#ffb13b',3:'#ffe36b',4:'#5be0a3',5:'#55c6ff',6:'#9b7bff',7:'#fb70d5'};
+    const tShapes = [ [[1,1,1,1]], [[2,0,0],[2,2,2]], [[0,0,3],[3,3,3]], [[4,4],[4,4]], [[0,5,5],[5,5,0]], [[0,6,0],[6,6,6]], [[7,7,0],[0,7,7]] ];
+    let tBoard, tPiece, tScoreValue=0, tLineValue=0, tDropCounter=0, tLast=0, tDropInterval=700, tAnim=0, tRunning=false, tPaused=false, tOver=false;
+    function tNewPiece(){const shape=tShapes[Math.floor(Math.random()*tShapes.length)].map(row=>row.slice());return {shape,x:Math.floor((tCols-shape[0].length)/2),y:0};}
+    function tDraw(){tctx.fillStyle='#0c0307';tctx.fillRect(0,0,tetrisCanvas.width,tetrisCanvas.height);for(let y=0;y<tRows;y++){for(let x=0;x<tCols;x++){const v=tBoard[y][x];if(v){tctx.fillStyle=tColors[v];tctx.fillRect(x*tCell+1,y*tCell+1,tCell-2,tCell-2);tctx.fillStyle='#ffffff35';tctx.fillRect(x*tCell+3,y*tCell+3,tCell-6,3);}else{tctx.strokeStyle='#ffffff0b';tctx.strokeRect(x*tCell,y*tCell,tCell,tCell);}}}if(tPiece){tPiece.shape.forEach((row,y)=>row.forEach((v,x)=>{if(v){tctx.fillStyle=tColors[v];tctx.fillRect((tPiece.x+x)*tCell+1,(tPiece.y+y)*tCell+1,tCell-2,tCell-2);tctx.fillStyle='#ffffff55';tctx.fillRect((tPiece.x+x)*tCell+3,(tPiece.y+y)*tCell+3,tCell-6,3);}}));}}
+    function tCollide(piece){for(let y=0;y<piece.shape.length;y++)for(let x=0;x<piece.shape[y].length;x++){if(piece.shape[y][x]&&(piece.x+x<0||piece.x+x>=tCols||piece.y+y>=tRows||(piece.y+y>=0&&tBoard[piece.y+y][piece.x+x])))return true;}return false;}
+    function tMerge(){tPiece.shape.forEach((row,y)=>row.forEach((v,x)=>{if(v&&tPiece.y+y>=0)tBoard[tPiece.y+y][tPiece.x+x]=v;}));let cleared=0;for(let y=tRows-1;y>=0;y--){if(tBoard[y].every(Boolean)){tBoard.splice(y,1);tBoard.unshift(Array(tCols).fill(0));cleared++;y++;}}if(cleared){tLineValue+=cleared;tScoreValue+=[0,100,300,500,800][cleared]*(1+Math.floor(tLineValue/10));tDropInterval=Math.max(130,700-Math.floor(tLineValue/5)*35);tScore.textContent=tScoreValue;tLines.textContent=tLineValue;}tPiece=tNewPiece();if(tCollide(tPiece)){tRunning=false;tOver=true;tStatus.textContent='Игра окончена — нажми «Новая игра».';}}
+    function tRotate(matrix){return matrix[0].map((_,i)=>matrix.map(row=>row[i]).reverse());}
+    function tMove(dx){if(!tRunning||tPaused)return;tPiece.x+=dx;if(tCollide(tPiece))tPiece.x-=dx;tDraw();}
+    function tDown(){if(!tRunning||tPaused)return;tPiece.y++;if(tCollide(tPiece)){tPiece.y--;tMerge();}tDropCounter=0;tDraw();}
+    function tHardDrop(){if(!tRunning||tPaused)return;while(!tCollide(tPiece)){tPiece.y++;}tPiece.y--;tMerge();tDraw();}
+    function tTurn(){if(!tRunning||tPaused)return;const old=tPiece.shape;tPiece.shape=tRotate(tPiece.shape);if(tCollide(tPiece))tPiece.shape=old;tDraw();}
+    function tLoop(time=0){const delta=time-tLast;tLast=time;if(tRunning&&!tPaused){tDropCounter+=delta;if(tDropCounter>tDropInterval)tDown();}tDraw();tAnim=requestAnimationFrame(tLoop);}
+    function tStart(){cancelAnimationFrame(tAnim);tBoard=Array.from({length:tRows},()=>Array(tCols).fill(0));tScoreValue=0;tLineValue=0;tDropInterval=700;tPiece=tNewPiece();tRunning=true;tPaused=false;tOver=false;tScore.textContent='0';tLines.textContent='0';tStatus.textContent='Игра идёт!';tLast=0;tDropCounter=0;tAnim=requestAnimationFrame(tLoop);}
+    document.getElementById('tetris-open').addEventListener('click',()=>{tetrisDialog.showModal();if(!tBoard){tBoard=Array.from({length:tRows},()=>Array(tCols).fill(0));tPiece=tNewPiece();tDraw();}});
+    document.querySelector('.tetris-close').addEventListener('click',()=>tetrisDialog.close());
+    tetrisDialog.addEventListener('click',event=>{if(event.target===tetrisDialog)tetrisDialog.close();});
+    tetrisDialog.addEventListener('close',()=>{tRunning=false;cancelAnimationFrame(tAnim);});
+    document.getElementById('tetris-start').addEventListener('click',tStart);
+    document.getElementById('tetris-pause').addEventListener('click',()=>{if(!tRunning||tOver)return;tPaused=!tPaused;tStatus.textContent=tPaused?'Пауза':'Игра идёт!';});
+    document.querySelectorAll('[data-tetris]').forEach(button=>button.addEventListener('click',()=>{const action=button.dataset.tetris;if(action==='left')tMove(-1);if(action==='right')tMove(1);if(action==='down')tDown();if(action==='rotate')tTurn();if(action==='drop')tHardDrop();}));
+    document.addEventListener('keydown',event=>{if(!tetrisDialog.open)return;const key=event.key;if(['ArrowLeft','ArrowRight','ArrowDown','ArrowUp',' '].includes(key))event.preventDefault();if(key==='ArrowLeft')tMove(-1);else if(key==='ArrowRight')tMove(1);else if(key==='ArrowDown')tDown();else if(key==='ArrowUp')tTurn();else if(key===' ')tHardDrop();});
   </script>
 </body>
 </html>
