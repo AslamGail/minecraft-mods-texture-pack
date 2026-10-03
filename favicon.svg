@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#ff4c5d"/>
-  <path fill="#fff6f6" d="M10 10h12v12h8v8h8V18h8V10h8v44H42V36h-8v-8h-4v8h-8v18H10z"/>
+  <text x="32" y="40" fill="#fff6f6" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="800">CH</text>
 </svg>
