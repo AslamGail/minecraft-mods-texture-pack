@@ -19,12 +19,15 @@
     .detail-dialog{width:min(920px,calc(100% - 28px));max-height:88vh;padding:24px;background:var(--paper);color:var(--ink);border:1px solid #d8dece;border-radius:7px;box-shadow:0 26px 90px #07151870}.detail-dialog::backdrop{background:#081619c9;backdrop-filter:blur(5px)}.dialog-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.dialog-head h2{font-size:27px;line-height:1.15;letter-spacing:-1px;margin:6px 0 0}.close-dialog{width:36px;height:36px;border:1px solid #cfd8cb;background:transparent;border-radius:4px;font-size:25px;line-height:1;color:#3c5149;cursor:pointer}.close-dialog:hover{background:var(--night);color:var(--mint)}.dialog-description{max-width:700px;color:#667873;font-size:13px;margin:12px 0 20px}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-height:50vh;overflow:auto}.gallery-grid img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;background:#dfe8dd;border:1px solid #d5ddd2}.gallery-empty{background:#e9eee4;border-radius:4px;padding:25px;color:#687872;font-size:12px}.dialog-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:17px;padding-top:13px;border-top:1px solid #dce1d5;color:#83908a;font:10px var(--mono)}.detail-source{color:#356454}.detail-source:hover{text-decoration:underline}    [hidden]{display:none!important}.recent-badge{position:absolute;right:13px;top:14px;background:var(--coral);color:var(--night);padding:5px 7px;border-radius:3px;font:8px var(--mono);letter-spacing:.5px;text-transform:uppercase;box-shadow:0 2px 8px #10262918}.footer{background:var(--night);color:#9aaba4;padding:21px 0;font:9px var(--mono)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer b{color:#e6ebde;font-weight:500}
     @media(max-width:860px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero:before{right:-190px}.nav-note{display:none}}
     @media(max-width:560px){gallery-grid{grid-template-columns:1fr}.wrap{width:calc(100% - 30px)}.nav{height:68px}.brand span:last-child{max-width:145px;font-size:11px}.logo{width:30px;height:30px}.tabs{gap:2px}.tab{padding:8px 9px;font-size:9px}.hero{padding:54px 0 47px}.hero:before{right:-315px;top:-120px;opacity:.4}.hero:after{right:-40px}.hero-content{max-width:95%}h1{font-size:43px;letter-spacing:-2.4px}.hero p{font-size:13px}.hero-stats{gap:11px;flex-wrap:wrap;font-size:9px}.catalog{padding:38px 0 55px}.heading{display:block}.heading h2{font-size:28px}.heading p{margin-top:10px}.grid{grid-template-columns:1fr}.card{min-height:235px}.art{height:115px}}
+    .download-proof{display:flex;justify-content:center;align-items:center;gap:8px;padding:7px 14px;background:#b9f27c;color:#142226;text-align:center;font:10px var(--mono);letter-spacing:.65px;text-transform:uppercase}.download-proof strong{font-size:12px}.tabs{flex-wrap:wrap;justify-content:center}.shader-card .art{background:var(--art)}.shader-card .card-foot a{font:9px var(--mono);color:#356454;letter-spacing:.4px}.shader-card .card-foot a:hover{text-decoration:underline}
+    @media(max-width:560px){.download-proof{font-size:8px;padding:7px 10px}.tabs{max-width:100%;overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap;padding:8px 7px;font-size:8px}}
   </style>
 </head>
 <body>
+  <div class="download-proof" aria-label="Более 100 скачиваний"><strong>100+</strong> скачиваний подборок для Minecraft</div>
   <header class="top"><div class="wrap nav">
     <a class="brand" href="#top" aria-label="На главную"><span class="logo">M</span><span>Minecraft <em>Mods</em> &amp; Texture pack</span></a>
-    <nav class="tabs" role="tablist" aria-label="Каталог"><button class="tab active" role="tab" aria-selected="true" aria-controls="mods-panel" data-tab="mods-panel">Моды</button><button class="tab" role="tab" aria-selected="false" aria-controls="packs-panel" data-tab="packs-panel">Ресурс-паки</button></nav>
+    <nav class="tabs" role="tablist" aria-label="Каталог"><button class="tab active" role="tab" aria-selected="true" aria-controls="mods-panel" data-tab="mods-panel">Моды</button><button class="tab" role="tab" aria-selected="false" aria-controls="packs-panel" data-tab="packs-panel">Ресурс-паки</button><button class="tab" role="tab" aria-selected="false" aria-controls="shaders-panel" data-tab="shaders-panel">Шейдеры</button></nav>
     <div class="nav-note">СОБЕРИ СВОЙ МИР</div>
   </div></header>
   <section class="hero" id="top"><div class="wrap"><div class="hero-content">
@@ -32,7 +35,7 @@
     <h1>Твой мир.<br><span>Твои правила.</span></h1>
     <p>Полезные моды и красивые ресурс-паки, которые меняют ощущения от игры — от плавной картинки до новых деталей в каждом биоме.</p>
     <a class="hero-action" href="#collection" id="hero-link">Смотреть подборку <span>↓</span></a>
-    <div class="hero-stats"><span><b>17</b> модов</span><span><b>13</b> ресурс-паков</span><span>Ссылки на страницы проектов</span></div>
+    <div class="hero-stats"><span><b>17</b> модов</span><span><b>13</b> ресурс-паков</span><span><b>5</b> шейдеров</span><span>Ссылки на страницы проектов</span></div>
   </div></div></section>
   <main id="collection">
     <section class="catalog" id="mods-panel" role="tabpanel" aria-label="Моды"><div class="wrap">
@@ -82,6 +85,17 @@
         <article class="card" data-pack-category="utility"><div class="art" style="--art:#e9def0;--orb:#b19ac5" data-glyph="✧"><span class="art-label">ЗАМЕТНЫЕ ЗАЧАРОВАНИЯ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Предметы</span><span class="pill">Подсказки</span></div><h3>Visual Enchantments</h3><p>Добавляет визуальные обозначения зачарований на предметах, чтобы их проще различать.</p><div class="card-foot"><small>УДОБНО В ИНВЕНТАРЕ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/visual-enchantments" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
       </div>
               <div class="notice"><b>Совет:</b> некоторые пакеты меняют только отдельные детали или требуют дополнительные моды. Перед установкой загляни в описание автора.</div>
+    </div></section>
+    <section class="catalog" id="shaders-panel" role="tabpanel" aria-label="Шейдеры" hidden><div class="wrap">
+      <div class="heading"><div><div class="kicker">03 / Свет и атмосфера</div><h2>Шейдеры для нового мира</h2></div><p>Пять популярных вариантов — от лёгких настроек до кинематографичного освещения. Для запуска нужен Iris или OptiFine; совместимость проверь на странице проекта.</p></div>
+      <div class="grid" id="shader-grid">
+        <article class="card shader-card"><div class="art" style="--art:#d7e9dc;--orb:#89c29b" data-glyph="✧"><span class="art-label">ВАНИЛЬНЫЙ СТИЛЬ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Сбалансированный</span><span class="pill">Iris / OptiFine</span></div><h3>Complementary Reimagined</h3><p>Сохраняет узнаваемый стиль Minecraft и добавляет мягкий свет, тени и выразительное небо.</p><div class="card-foot"><small>КРАСИВО И УЗНАВАЕМО</small><a href="https://modrinth.com/shader/complementary-reimagined" target="_blank" rel="noopener noreferrer">СТРАНИЦА ↗</a></div></div></article>
+        <article class="card shader-card"><div class="art" style="--art:#d8e4ed;--orb:#81aeda" data-glyph="☼"><span class="art-label">РЕАЛИСТИЧНЫЙ СВЕТ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Детальная графика</span><span class="pill">Iris / OptiFine</span></div><h3>BSL Shaders</h3><p>Яркое освещение, объёмные облака, отражения и настраиваемые визуальные эффекты.</p><div class="card-foot"><small>ЦВЕТ И ОТРАЖЕНИЯ</small><a href="https://modrinth.com/shader/bsl-shaders" target="_blank" rel="noopener noreferrer">СТРАНИЦА ↗</a></div></div></article>
+        <article class="card shader-card"><div class="art" style="--art:#eadfcf;--orb:#d1a66f" data-glyph="◉"><span class="art-label">МАКСИМУМ ДЕТАЛЕЙ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Реалистичный</span><span class="pill">Iris / OptiFine</span></div><h3>Complementary Unbound</h3><p>Более реалистичный вариант Complementary с выразительными тенями, водой и атмосферой.</p><div class="card-foot"><small>ПОГРУЖЕНИЕ В МИР</small><a href="https://modrinth.com/shader/complementary-unbound" target="_blank" rel="noopener noreferrer">СТРАНИЦА ↗</a></div></div></article>
+        <article class="card shader-card"><div class="art" style="--art:#e5d9ce;--orb:#d78b68" data-glyph="✺"><span class="art-label">ГИБКИЕ НАСТРОЙКИ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Много пресетов</span><span class="pill">Iris / OptiFine</span></div><h3>Sildur’s Vibrant Shaders</h3><p>Меняет освещение и цвета мира; доступны разные пресеты для широкого диапазона компьютеров.</p><div class="card-foot"><small>ЯРКИЙ ОБЛИК</small><a href="https://modrinth.com/shader/sildurs-vibrant-shaders" target="_blank" rel="noopener noreferrer">СТРАНИЦА ↗</a></div></div></article>
+        <article class="card shader-card"><div class="art" style="--art:#d9e8e4;--orb:#7cbca8" data-glyph="⚡"><span class="art-label">АКЦЕНТ НА ПРОИЗВОДИТЕЛЬНОСТЬ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Лёгкий и настраиваемый</span><span class="pill">Iris / OptiFine</span></div><h3>MakeUp — Ultra Fast</h3><p>Настраиваемый шейдерпак с упором на соотношение качества и производительности.</p><div class="card-foot"><small>ЛЁГКИЙ СТАРТ</small><a href="https://modrinth.com/shader/makeup-ultra-fast-shaders" target="_blank" rel="noopener noreferrer">СТРАНИЦА ↗</a></div></div></article>
+      </div>
+      <div class="notice"><b>Перед установкой:</b> шейдеры — это визуальные эффекты, а не моды. Установи совместимый загрузчик шейдеров и проверь требования к версии игры и видеокарте.</div>
     </div></section>
   </main>
   <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title">
@@ -160,7 +174,8 @@
       });
       panels.forEach(panel => panel.hidden = panel.id !== target);
       heroLink.href = '#collection';
-      heroLink.innerHTML = target === 'mods-panel' ? 'Смотреть моды <span>↓</span>' : 'Смотреть ресурс-паки <span>↓</span>';
+      const labels = {'mods-panel':'моды','packs-panel':'ресурс-паки','shaders-panel':'шейдеры'};
+      heroLink.innerHTML = `Смотреть ${labels[target]} <span>↓</span>`;
     }));
     function setupFilter(buttonSelector, cardSelector, categoryAttribute, emptyId) {
       const buttons = document.querySelectorAll(buttonSelector);
