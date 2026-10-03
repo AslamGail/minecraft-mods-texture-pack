@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c20">
+  <meta name="description" content="Minecraft Mods & Texture pack — подборка полезных модов и красивых ресурспаков для Minecraft.">
+  <title>Minecraft Mods &amp; Texture pack</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--night:#101c20;--night2:#17272a;--paper:#f4f0e5;--ink:#182528;--muted:#7c8b88;--mint:#b9f27c;--coral:#ff8d70;--line:#dcded1;--mono:'DM Mono',monospace;--sans:'Manrope',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans)}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:0 auto}
+    .top{background:var(--night);color:#f3f5ec}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.6px}.logo{width:34px;height:34px;display:grid;place-items:center;background:var(--mint);color:var(--night);font-size:17px;clip-path:polygon(0 0,72% 0,72% 25%,100% 25%,100% 100%,27% 100%,27% 75%,0 75%)}.brand span:last-child{font-size:14px}.brand em{font-style:normal;color:var(--mint)}.tabs{display:flex;gap:5px;padding:4px;border:1px solid #ffffff20;border-radius:7px}.tab{border:0;background:transparent;color:#a8b7b1;border-radius:4px;padding:9px 15px;font:11px var(--mono);cursor:pointer;transition:.18s}.tab:hover{color:white}.tab.active{background:var(--mint);color:var(--night)}.nav-note{font:10px var(--mono);color:#95a8a2;letter-spacing:.6px}
+    .hero{background:var(--night);color:#f5f4e9;position:relative;overflow:hidden;padding:63px 0 66px}.hero:before{content:'';position:absolute;width:510px;height:510px;border-radius:50%;right:-40px;top:-180px;background:radial-gradient(circle at 35% 37%,#c5f089 0 8%,#83c5a8 8% 25%,#3f8b83 25% 46%,#17272a 47% 68%,transparent 69%);opacity:.72}.hero:after{content:'';position:absolute;right:130px;top:48px;width:250px;height:190px;background-image:linear-gradient(#efffdf18 1px,transparent 1px),linear-gradient(90deg,#efffdf18 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(135deg,transparent,#000 55%,transparent);transform:rotate(-14deg)}.hero-content{max-width:690px;position:relative;z-index:1}.eyebrow{font:10px var(--mono);letter-spacing:1.6px;text-transform:uppercase;color:var(--mint);display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:22px;height:1px;background:var(--mint)}h1{font-size:clamp(40px,6vw,70px);line-height:1.04;letter-spacing:-3.5px;margin:20px 0 16px}h1 span{color:var(--mint)}.hero p{max-width:530px;color:#b4c2bb;font-size:15px;margin:0 0 25px}.hero-action{display:inline-flex;align-items:center;gap:11px;background:var(--coral);color:#172326;padding:12px 16px;border-radius:4px;font-weight:800;font-size:12px;transition:.2s}.hero-action:hover{transform:translateY(-2px);background:#ffa48c}.hero-stats{display:flex;gap:23px;margin-top:38px;color:#95a8a2;font:10px var(--mono);text-transform:uppercase}.hero-stats b{color:#eff4e8;font-weight:500}
+    main{min-height:55vh}.catalog{padding:50px 0 78px}.heading{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:23px}.kicker{font:10px var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:#638575}.heading h2{margin:7px 0 0;font-size:32px;line-height:1.1;letter-spacing:-1.5px}.heading p{max-width:370px;color:#71807c;font-size:12px;margin:0}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 17px}.filter{background:transparent;border:1px solid #cdd3c8;color:#6b7975;border-radius:3px;padding:7px 12px;font:10px var(--mono);cursor:pointer}.filter:hover,.filter.active{background:var(--night);border-color:var(--night);color:var(--mint)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{background:#fbfaf5;border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column;min-height:250px;transition:transform .18s,border-color .18s,box-shadow .18s;cursor:pointer}.card:hover{transform:translateY(-3px);border-color:#aebca6;box-shadow:0 12px 28px #20332b10}.card[data-category]{cursor:default}.art{height:105px;position:relative;overflow:hidden;background:var(--art,#d8e4d4)}.art:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#132c2411 1px,transparent 1px),linear-gradient(90deg,#132c2411 1px,transparent 1px);background-size:18px 18px;mask-image:linear-gradient(90deg,transparent,#000 24%,#000 76%,transparent)}.art:after{content:attr(data-glyph);position:absolute;right:19px;bottom:-29px;font-size:104px;line-height:1;opacity:.75;filter:drop-shadow(4px 7px 0 #10262915)}.art-label{position:absolute;left:15px;top:14px;background:#fbfaf5d9;border-radius:3px;padding:5px 8px;font:9px var(--mono);letter-spacing:.5px;color:#435b51}.art-orb{position:absolute;width:84px;height:84px;left:calc(50% - 42px);top:9px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#ffffffbd,transparent 45%),var(--orb,#a1c89b);box-shadow:18px 12px 0 -8px #253f3c1f}.card-body{padding:16px 17px 15px;display:flex;flex:1;flex-direction:column}.card-meta{display:flex;align-items:center;justify-content:space-between;gap:9px;font:9px var(--mono);letter-spacing:.7px;color:#7a8a83;text-transform:uppercase}.pill{color:#496859;background:#e8efe1;padding:4px 7px;border-radius:2px}.card h3{font-size:16px;letter-spacing:-.4px;margin:10px 0 5px}.card p{font-size:11px;line-height:1.6;color:#74817b;margin:0 0 16px}.card-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:9px;border-top:1px solid #e6e8df}.card-foot small{color:#87938d;font:9px var(--mono)}.open-hint{font:9px var(--mono);color:#356454;letter-spacing:.4px}.card:focus-visible{outline:3px solid var(--coral);outline-offset:2px}.notice{margin-top:18px;color:#71807b;border-left:2px solid var(--coral);padding:8px 12px;font-size:11px}.notice b{color:#354d44}
+    .detail-dialog{width:min(920px,calc(100% - 28px));max-height:88vh;padding:24px;background:var(--paper);color:var(--ink);border:1px solid #d8dece;border-radius:7px;box-shadow:0 26px 90px #07151870}.detail-dialog::backdrop{background:#081619c9;backdrop-filter:blur(5px)}.dialog-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.dialog-head h2{font-size:27px;line-height:1.15;letter-spacing:-1px;margin:6px 0 0}.close-dialog{width:36px;height:36px;border:1px solid #cfd8cb;background:transparent;border-radius:4px;font-size:25px;line-height:1;color:#3c5149;cursor:pointer}.close-dialog:hover{background:var(--night);color:var(--mint)}.dialog-description{max-width:700px;color:#667873;font-size:13px;margin:12px 0 20px}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-height:50vh;overflow:auto}.gallery-grid img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;background:#dfe8dd;border:1px solid #d5ddd2}.gallery-empty{background:#e9eee4;border-radius:4px;padding:25px;color:#687872;font-size:12px}.dialog-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:17px;padding-top:13px;border-top:1px solid #dce1d5;color:#83908a;font:10px var(--mono)}.detail-source{color:#356454}.detail-source:hover{text-decoration:underline}    [hidden]{display:none!important}.recent-badge{position:absolute;right:13px;top:14px;background:var(--coral);color:var(--night);padding:5px 7px;border-radius:3px;font:8px var(--mono);letter-spacing:.5px;text-transform:uppercase;box-shadow:0 2px 8px #10262918}.footer{background:var(--night);color:#9aaba4;padding:21px 0;font:9px var(--mono)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer b{color:#e6ebde;font-weight:500}
+    @media(max-width:860px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero:before{right:-190px}.nav-note{display:none}}
+    @media(max-width:560px){gallery-grid{grid-template-columns:1fr}.wrap{width:calc(100% - 30px)}.nav{height:68px}.brand span:last-child{max-width:145px;font-size:11px}.logo{width:30px;height:30px}.tabs{gap:2px}.tab{padding:8px 9px;font-size:9px}.hero{padding:54px 0 47px}.hero:before{right:-315px;top:-120px;opacity:.4}.hero:after{right:-40px}.hero-content{max-width:95%}h1{font-size:43px;letter-spacing:-2.4px}.hero p{font-size:13px}.hero-stats{gap:11px;flex-wrap:wrap;font-size:9px}.catalog{padding:38px 0 55px}.heading{display:block}.heading h2{font-size:28px}.heading p{margin-top:10px}.grid{grid-template-columns:1fr}.card{min-height:235px}.art{height:115px}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap nav">
+    <a class="brand" href="#top" aria-label="На главную"><span class="logo">M</span><span>Minecraft <em>Mods</em> &amp; Texture pack</span></a>
+    <nav class="tabs" role="tablist" aria-label="Каталог"><button class="tab active" role="tab" aria-selected="true" aria-controls="mods-panel" data-tab="mods-panel">Моды</button><button class="tab" role="tab" aria-selected="false" aria-controls="packs-panel" data-tab="packs-panel">Ресурс-паки</button></nav>
+    <div class="nav-note">СОБЕРИ СВОЙ МИР</div>
+  </div></header>
+  <section class="hero" id="top"><div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Подборка для Minecraft Java</div>
+    <h1>Твой мир.<br><span>Твои правила.</span></h1>
+    <p>Полезные моды и красивые ресурс-паки, которые меняют ощущения от игры — от плавной картинки до новых деталей в каждом биоме.</p>
+    <a class="hero-action" href="#collection" id="hero-link">Смотреть подборку <span>↓</span></a>
+    <div class="hero-stats"><span><b>17</b> модов</span><span><b>13</b> ресурс-паков</span><span>Ссылки на страницы проектов</span></div>
+  </div></div></section>
+  <main id="collection">
+    <section class="catalog" id="mods-panel" role="tabpanel" aria-label="Моды"><div class="wrap">
+      <div class="top-table-wrap"><div class="table-heading"><div><div class="kicker">ВЫБОР РЕДАКЦИИ</div><h3>Топ 3 модов</h3></div><span class="table-note">Полезны почти в любой сборке</span></div><div class="table-scroll"><table><thead><tr><th>Место</th><th>Мод</th><th>Почему в топе</th></tr></thead><tbody><tr><td><span class="rank">01</span></td><td><b>Sodium</b></td><td>Плавнее отрисовка и меньше подтормаживаний</td></tr><tr><td><span class="rank">02</span></td><td><b>Just Enough Items</b></td><td>Быстрый поиск рецептов и способов применения</td></tr><tr><td><span class="rank">03</span></td><td><b>Xaero’s Minimap</b></td><td>Удобная карта, координаты и метки</td></tr></tbody></table></div></div>
+      <div class="heading"><div><div class="kicker">01 / Игровые улучшения</div><h2>Подбери свой мод</h2></div><p>Инструменты для производительности, исследования, инвентаря и удобного крафта. Мы пытаемся добавить как можно больше модов.</p></div>
+      
+      <div class="filters" role="group" aria-label="Фильтр модов"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="utility">Удобство</button><button class="filter" data-filter="explore">Исследование</button><button class="filter" data-filter="craft">Крафт</button></div>
+      <div class="grid" id="mod-grid">
+        <article class="card" data-category="utility"><div class="art" style="--art:#dce9d6;--orb:#bce07c" data-glyph="⚡"><span class="art-label">БЫСТРАЯ КАРТИНКА</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Производительность</span><span class="pill">Лёгкий</span></div><h3>Sodium</h3><p>Оптимизирует рендеринг и помогает добиться более плавной игры.</p><div class="card-foot"><small>ВИЗУАЛЬНАЯ ОПТИМИЗАЦИЯ</small><a class="link" href="https://modrinth.com/mod/sodium" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#d8e8de;--orb:#8dcbb3" data-glyph="✳"><span class="art-label">ТИШЕ ПОД КАПОТОМ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Производительность</span><span class="pill">Оптимизация</span></div><h3>Lithium</h3><p>Ускоряет игровые процессы и физику мира, сохраняя знакомые механики.</p><div class="card-foot"><small>МИР И ИИ МОБОВ</small><a class="link" href="https://modrinth.com/mod/lithium" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#e9dfc7;--orb:#d3b786" data-glyph="▧"><span class="art-label">БОЛЬШЕ ПАМЯТИ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Производительность</span><span class="pill">Оптимизация</span></div><h3>FerriteCore</h3><p>Сокращает расход оперативной памяти, особенно в больших модовых сборках.</p><div class="card-foot"><small>ПАМЯТЬ</small><a class="link" href="https://modrinth.com/mod/ferrite-core" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="explore"><div class="art" style="--art:#d5e8e9;--orb:#72b9bb" data-glyph="⌖"><span class="art-label">НЕ ТЕРЯЙСЯ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Исследование</span><span class="pill">Навигация</span></div><h3>Xaero’s Minimap</h3><p>Мини-карта, координаты и точки маршрута всегда под рукой.</p><div class="card-foot"><small>МИНИ-КАРТА</small><a class="link" href="https://modrinth.com/mod/xaeros-minimap" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="craft"><div class="art" style="--art:#eee1ca;--orb:#e5bd79" data-glyph="⌘"><span class="art-label">КРАФТ БЕЗ ПОИСКА</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Крафт</span><span class="pill">Рецепты</span></div><h3>Just Enough Items</h3><p>Показывает предметы и рецепты прямо в инвентаре.</p><div class="card-foot"><small>РЕЦЕПТЫ И ПРИМЕНЕНИЯ</small><a class="link" href="https://modrinth.com/mod/jei" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#f0dfd4;--orb:#e99d78" data-glyph="♡"><span class="art-label">ЕДА И ЗАПАСЫ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Интерфейс</span></div><h3>AppleSkin</h3><p>Показывает насыщение и эффект еды, чтобы проще планировать запасы.</p><div class="card-foot"><small>ИНФОРМАЦИЯ О ЕДЕ</small><a class="link" href="https://modrinth.com/mod/appleskin" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#e1def0;--orb:#a5a0db" data-glyph="✧"><span class="art-label">МИР В НОВОМ СВЕТЕ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Графика</span><span class="pill">Шейдеры</span></div><h3>Iris Shaders</h3><p>Загружает шейдеры, чтобы изменить свет, тени и атмосферу мира.</p><div class="card-foot"><small>ВИЗУАЛЬНЫЙ ЭФФЕКТ</small><a class="link" href="https://modrinth.com/mod/iris" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#d8e8de;--orb:#84ba91" data-glyph="⌕"><span class="art-label">ЧТО ПЕРЕД ТОБОЙ?</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Информация</span></div><h3>Jade</h3><p>Показывает информацию о блоке или существе, на которое ты смотришь.</p><div class="card-foot"><small>ПОДСКАЗКИ В МИРЕ</small><a class="link" href="https://modrinth.com/mod/jade" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#e6ddd2;--orb:#bd9971" data-glyph="▤"><span class="art-label">МЕНЬШЕ КЛИКОВ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Инвентарь</span><span class="pill">Удобство</span></div><h3>Mouse Tweaks</h3><p>Ускоряет сортировку и перенос предметов движениями мыши.</p><div class="card-foot"><small>УПРАВЛЕНИЕ МЫШЬЮ</small><a class="link" href="https://modrinth.com/mod/mouse-tweaks" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#d9e5e9;--orb:#8eb6c0" data-glyph="▣"><span class="art-label">ЗАГЛЯНИ ВНУТРЬ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Инвентарь</span><span class="pill">Хранение</span></div><h3>Shulker Box Tooltip</h3><p>Показывает содержимое шалкерового ящика прямо из инвентаря.</p><div class="card-foot"><small>БЫСТРЫЙ ПРОСМОТР</small><a class="link" href="https://modrinth.com/mod/shulkerboxtooltip" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="explore"><div class="art" style="--art:#d7e5d7;--orb:#8ab589" data-glyph="⌖"><span class="art-label">ЦЕЛЫЙ МИР НА КАРТЕ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Исследование</span><span class="pill">Карта</span></div><h3>Xaero’s World Map</h3><p>Сохраняет карту исследованных мест и помогает планировать путешествия.</p><div class="card-foot"><small>КАРТА МИРА</small><a class="link" href="https://modrinth.com/mod/xaeros-world-map" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="craft"><div class="art" style="--art:#e8e0c8;--orb:#c7b16d" data-glyph="☷"><span class="art-label">ВСЁ ПОД КОНТРОЛЕМ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Настройки</span></div><h3>Mod Menu</h3><p>Список установленных модов и быстрый доступ к их настройкам.</p><div class="card-foot"><small>МЕНЕДЖЕР МОДОВ</small><a class="link" href="https://modrinth.com/mod/modmenu" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#dce4ed;--orb:#9bb1d0" data-glyph="⌕"><span class="art-label">НАЙДИ НУЖНУЮ КНОПКУ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Управление</span></div><h3>Controlling</h3><p>Добавляет поиск по клавишам и показывает конфликты назначений.</p><div class="card-foot"><small>БЫСТРЫЙ ПОИСК КЛАВИШ</small><a class="link" href="https://modrinth.com/mod/controlling" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#e4e0f0;--orb:#aba0d1" data-glyph="F3"><span class="art-label">ПОНЯТНЕЕ ДЕБАГ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Настройка</span></div><h3>BetterF3</h3><p>Делает экран отладки F3 более понятным и позволяет настроить его вид.</p><div class="card-foot"><small>ИНФОРМАЦИЯ О МИРЕ</small><a class="link" href="https://modrinth.com/mod/betterf3" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="craft"><div class="art" style="--art:#f0dfd0;--orb:#d5966c" data-glyph="▧"><span class="art-label">СТРОЙ ПО ПЛАНУ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Строительство</span><span class="pill">Схемы</span></div><h3>Litematica</h3><p>Загружает схемы построек и показывает план блоков в мире. Требуется MaLiLib.</p><div class="card-foot"><small>ПЛАНИРОВАНИЕ ПОСТРОЕК</small><a class="link" href="https://modrinth.com/mod/litematica" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#d9e8e7;--orb:#87c2ba" data-glyph="⚡"><span class="art-label">ПЛАВНЕЕ РЕНДЕРИНГ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Производительность</span><span class="pill">Оптимизация</span></div><h3>ImmediatelyFast</h3><p>Ускоряет отрисовку интерфейса, частиц и сущностей на стороне клиента.</p><div class="card-foot"><small>ОПТИМИЗАЦИЯ ГРАФИКИ</small><a class="link" href="https://modrinth.com/mod/immediatelyfast" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+        <article class="card" data-category="utility"><div class="art" style="--art:#e9e2cf;--orb:#cab36f" data-glyph="◉"><span class="art-label">ПРИБЛИЗЬ ДАЛЬ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Удобство</span><span class="pill">Зум</span></div><h3>Zoomify</h3><p>Добавляет настраиваемое приближение с гибкими параметрами управления.</p><div class="card-foot"><small>НАБЛЮДАЙ ЗА ДЕТАЛЯМИ</small><a class="link" href="https://modrinth.com/mod/zoomify" target="_blank" rel="noopener noreferrer">Открыть ↗</a></div></div></article>
+      </div>
+      <div class="notice"><b>Перед установкой:</b> проверь версию Minecraft и загрузчик на странице проекта. В мультиплеере ориентируйся на правила сервера.</div>
+    </div></section>
+    <section class="catalog" id="packs-panel" role="tabpanel" aria-label="Ресурс-паки" hidden><div class="wrap">
+      <div class="top-table-wrap"><div class="table-heading"><div><div class="kicker">ВЫБОР РЕДАКЦИИ</div><h3>Топ 3 ресурс-пака</h3></div><span class="table-note">Красиво и удобно в игре</span></div><div class="table-scroll"><table><thead><tr><th>Место</th><th>Ресурс-пак</th><th>Почему в топе</th></tr></thead><tbody><tr><td><span class="rank">01</span></td><td><b>Faithful 32x</b></td><td>Чётче текстуры без потери ванильного стиля</td></tr><tr><td><span class="rank">02</span></td><td><b>Bare Bones</b></td><td>Яркий, простой и легко читаемый мир</td></tr><tr><td><span class="rank">03</span></td><td><b>Fresh Animations</b></td><td>Добавляет мобам выразительные анимации</td></tr></tbody></table></div></div>
+      <div class="heading"><div><div class="kicker">02 / Новый облик</div><h2>Ресурс-паки под настроение</h2></div><p>От аккуратного обновления ванильных текстур до анимации мобов и полностью нового художественного стиля.</p></div>
+      
+      <div class="filters" role="group" aria-label="Фильтр ресурс-паков"><button class="filter active" data-pack-filter="all">Все</button><button class="filter" data-pack-filter="vanilla">Ванильный стиль</button><button class="filter" data-pack-filter="style">Новый стиль</button><button class="filter" data-pack-filter="utility">Полезные</button></div>
+      <div class="grid" id="pack-grid">
+        <article class="card" data-pack-category="vanilla"><div class="art" style="--art:#e4eccf;--orb:#94b872" data-glyph="▦"><span class="art-label">ЗНАКОМО, НО ЧЁТЧЕ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Ванильный стиль</span><span class="pill">32×</span></div><h3>Faithful 32x</h3><p>Привычный Minecraft с более чёткими и детальными текстурами.</p><div class="card-foot"><small>УЗНАВАЕМЫЙ ОБЛИК</small><span class="source-data" data-url="https://modrinth.com/resourcepack/faithful-32x" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="vanilla"><div class="art" style="--art:#f5dfb9;--orb:#efbd72" data-glyph="◈"><span class="art-label">МИР КАК В ТРЕЙЛЕРЕ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Минимализм</span><span class="pill">16×</span></div><h3>Bare Bones</h3><p>Яркий, чистый стиль, вдохновлённый официальными трейлерами Minecraft.</p><div class="card-foot"><small>ЛЁГКИЙ И ЧИТАЕМЫЙ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/bare-bones" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="utility"><div class="art" style="--art:#d6e9dc;--orb:#82bd8b" data-glyph="❋"><span class="art-label">ЖИВОЙ МИР</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Анимация существ</span><span class="pill">Нужен EMF/ETF</span></div><h3>Fresh Animations</h3><p>Добавляет выразительные анимации мобам. Для работы нужны EMF и ETF либо совместимые функции OptiFine.</p><div class="card-foot"><small>МОДЕЛИ И АНИМАЦИИ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/fresh-animations" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="style"><div class="art" style="--art:#f2e2c9;--orb:#d69b69" data-glyph="✿"><span class="art-label">ТЁПЛЫЙ И УЮТНЫЙ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Тёплый стиль</span><span class="pill">16× / 32×</span></div><h3>Dandelion X</h3><p>Мягкая палитра и цельные текстуры для уютных построек и приключений.</p><div class="card-foot"><small>ЦЕЛЬНАЯ ПАЛИТРА</small><span class="source-data" data-url="https://modrinth.com/resourcepack/dandelion-x" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="style"><div class="art" style="--art:#e6d9ed;--orb:#a784c0" data-glyph="✦"><span class="art-label">ПОЛНАЯ ПЕРЕРИСОВКА</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Новый стиль</span><span class="pill">16×</span></div><h3>Faithless</h3><p>Большое обновление текстур, интерфейса и предметов с характерным авторским стилем.</p><div class="card-foot"><small>ВЫЖИВАНИЕ И СТРОИТЕЛЬСТВО</small><span class="source-data" data-url="https://modrinth.com/resourcepack/faithless" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="vanilla"><div class="art" style="--art:#d4e5ed;--orb:#83b9d0" data-glyph="⬡"><span class="art-label">ДЕТАЛЬНЕЕ, НО ВАНИЛЬНО</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Ванильный стиль</span><span class="pill">32×</span></div><h3>Clarity</h3><p>Добавляет детализацию блокам и предметам, сохраняя узнаваемый пиксельный стиль.</p><div class="card-foot"><small>ДЕТАЛЬНЫЕ ТЕКСТУРЫ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/clarity" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="utility"><div class="art" style="--art:#dcebd8;--orb:#91c184" data-glyph="♧"><span class="art-label">ПУШИСТЫЕ КРОНЫ</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Природа</span><span class="pill">Совместим</span></div><h3>Motschen’s Better Leaves</h3><p>Делает листву объёмнее и гуще; можно сочетать с другими ресурс-паками.</p><div class="card-foot"><small>ДЕТАЛЬ ДЛЯ ПЕЙЗАЖЕЙ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/better-leaves" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="utility"><div class="art" style="--art:#d9e9e4;--orb:#85bbb0" data-glyph="✣"><span class="art-label">СОБЕРИ СВОЙ НАБОР</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Настройка</span><span class="pill">Конструктор</span></div><h3>Vanilla Tweaks</h3><p>Выбери только нужные мелкие улучшения: прозрачное стекло, подсказки и другие детали.</p><div class="card-foot"><small>СОБСТВЕННАЯ СБОРКА</small><span class="source-data" data-url="https://vanillatweaks.net/picker/resource-packs/" hidden></span><span class="open-hint">ПРЕВЬЮ ↗</span></div></div></article>
+<article class="card" data-pack-category="utility"><div class="art" style="--art:#d8e8f2;--orb:#7fb9dd" data-glyph="☼"><span class="art-label">НЕБО В ЦВЕТЕ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Пейзажи</span><span class="pill">Небо</span></div><h3>Dramatic Skys</h3><p>Добавляет выразительные облака, закаты и атмосферные небеса. Для эффектов могут понадобиться дополнительные моды.</p><div class="card-foot"><small>АТМОСФЕРА МИРА</small><span class="source-data" data-url="https://modrinth.com/resourcepack/dramatic-skys" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="utility"><div class="art" style="--art:#e0ecd0;--orb:#80aa68" data-glyph="♧"><span class="art-label">КРУГЛЫЕ ДЕРЕВЬЯ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Природа</span><span class="pill">Vanilla+</span></div><h3>Round Trees</h3><p>Меняет форму крон и стволов, чтобы леса выглядели пышнее и естественнее.</p><div class="card-foot"><small>ДЕТАЛИ ПЕЙЗАЖА</small><span class="source-data" data-url="https://modrinth.com/resourcepack/round-trees" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="vanilla"><div class="art" style="--art:#e3e7e1;--orb:#aab9ac" data-glyph="▧"><span class="art-label">ОБЪЁМНЫЕ МОДЕЛИ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Ванильный стиль</span><span class="pill">3D-модели</span></div><h3>3D Default</h3><p>Добавляет лёгкие объёмные модели блокам и предметам, сохраняя стандартные текстуры.</p><div class="card-foot"><small>БОЛЬШЕ ОБЪЁМА</small><span class="source-data" data-url="https://modrinth.com/resourcepack/3d-default" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="style"><div class="art" style="--art:#f1e2d3;--orb:#d29b77" data-glyph="🐾"><span class="art-label">НОВЫЕ ПОРОДЫ ВОЛКОВ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Животные</span><span class="pill">Детали</span></div><h3>Better Breeds</h3><p>Придаёт волкам разные узнаваемые образы пород собак, сохраняя стиль Minecraft.</p><div class="card-foot"><small>БОЛЬШЕ ХАРАКТЕРА</small><span class="source-data" data-url="https://modrinth.com/resourcepack/better-breeds" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+        <article class="card" data-pack-category="utility"><div class="art" style="--art:#e9def0;--orb:#b19ac5" data-glyph="✧"><span class="art-label">ЗАМЕТНЫЕ ЗАЧАРОВАНИЯ</span><span class="recent-badge">Недавно добавлен</span><i class="art-orb"></i></div><div class="card-body"><div class="card-meta"><span>Предметы</span><span class="pill">Подсказки</span></div><h3>Visual Enchantments</h3><p>Добавляет визуальные обозначения зачарований на предметах, чтобы их проще различать.</p><div class="card-foot"><small>УДОБНО В ИНВЕНТАРЕ</small><span class="source-data" data-url="https://modrinth.com/resourcepack/visual-enchantments" hidden></span><span class="open-hint">ГАЛЕРЕЯ ↗</span></div></div></article>
+      </div>
+              <div class="notice"><b>Совет:</b> некоторые пакеты меняют только отдельные детали или требуют дополнительные моды. Перед установкой загляни в описание автора.</div>
+    </div></section>
+  </main>
+  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title">
+    <div class="dialog-head"><div><div class="kicker" id="detail-kind">ПРЕВЬЮ ПРОЕКТА</div><h2 id="detail-title">Название</h2></div><button class="close-dialog" type="button" aria-label="Закрыть окно">×</button></div>
+    <p class="dialog-description" id="detail-description"></p>
+    <div class="gallery-grid" id="detail-gallery"></div>
+    <div class="gallery-empty" id="gallery-empty" hidden>У проекта пока нет галереи изображений. Открой официальную страницу проекта для подробного описания.</div>
+    <div class="dialog-foot"><span id="gallery-count">Загружаем изображения…</span><a class="detail-source" id="detail-source" target="_blank" rel="noopener noreferrer">Страница проекта ↗</a></div>
+  </dialog>
+  <footer class="footer"><div class="wrap footer-inner"><span><b>Minecraft Mods &amp; Texture pack</b> — фанатская подборка</span><span>Minecraft — товарный знак Microsoft. Сайт не связан с Mojang или Microsoft.</span></div></footer>
+  <script>
+    const dialog = document.getElementById('detail-dialog');
+    const gallery = document.getElementById('detail-gallery');
+    const galleryEmpty = document.getElementById('gallery-empty');
+    const galleryCount = document.getElementById('gallery-count');
+    document.querySelector('.close-dialog').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    async function showCard(card) {
+      const title = card.querySelector('h3')?.textContent.trim() || 'Minecraft';
+      const description = card.querySelector('.card-body p')?.textContent.trim() || '';
+      const source = card.querySelector('.source-data')?.dataset.url || '';
+      const path = new URL(source).pathname.split('/').filter(Boolean);
+      const projectSlug = path.length > 1 ? path[1] : '';
+      document.getElementById('detail-title').textContent = title;
+      document.getElementById('detail-description').textContent = description;
+      document.getElementById('detail-kind').textContent = card.closest('#pack-grid') ? 'РЕСУРС-ПАК · ПРЕВЬЮ' : 'МОД · ПРЕВЬЮ';
+      document.getElementById('detail-source').href = source;
+      gallery.replaceChildren();
+      galleryEmpty.hidden = true;
+      galleryCount.textContent = 'Загружаем изображения…';
+      dialog.showModal();
+      if (!projectSlug || source.includes('vanillatweaks.net')) {
+        galleryEmpty.hidden = false;
+        galleryCount.textContent = 'Галерея недоступна';
+        return;
+      }
+      try {
+        const response = await fetch(`https://api.modrinth.com/v2/project/${encodeURIComponent(projectSlug)}`);
+        if (!response.ok) throw new Error('Gallery unavailable');
+        const project = await response.json();
+        const images = (project.gallery || []).map(item => item.url).filter(Boolean);
+        if (!images.length) {
+          galleryEmpty.hidden = false;
+          galleryCount.textContent = 'Нет изображений в галерее';
+          return;
+        }
+        images.forEach((url, index) => {
+          const image = document.createElement('img');
+          image.src = url;
+          image.alt = `${title} — превью ${index + 1}`;
+          image.loading = 'lazy';
+          image.addEventListener('error', () => image.remove());
+          gallery.append(image);
+        });
+        galleryCount.textContent = `${images.length} изображений · галерея проекта`;
+      } catch {
+        galleryEmpty.hidden = false;
+        galleryCount.textContent = 'Не удалось загрузить галерею';
+      }
+    }
+    document.querySelectorAll('#pack-grid .card').forEach(card => {
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      card.addEventListener('click', event => { if (!event.target.closest('a')) showCard(card); });
+      card.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); showCard(card); } });
+    });
+    const tabs = document.querySelectorAll('[data-tab]');
+    const panels = document.querySelectorAll('[role="tabpanel"]');
+    const heroLink = document.getElementById('hero-link');
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+      tabs.forEach(item => {
+        const active = item === tab;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-selected', String(active));
+      });
+      panels.forEach(panel => panel.hidden = panel.id !== target);
+      heroLink.href = '#collection';
+      heroLink.innerHTML = target === 'mods-panel' ? 'Смотреть моды <span>↓</span>' : 'Смотреть ресурс-паки <span>↓</span>';
+    }));
+    function setupFilter(buttonSelector, cardSelector, categoryAttribute, emptyId) {
+      const buttons = document.querySelectorAll(buttonSelector);
+      const cards = document.querySelectorAll(cardSelector);
+      buttons.forEach(button => button.addEventListener('click', () => {
+        buttons.forEach(item => item.classList.toggle('active', item === button));
+        cards.forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset[categoryAttribute] !== button.dataset.filter);
+      }));
+    }
+    const modFilters = document.querySelectorAll('#mods-panel .filter');
+    const modCards = document.querySelectorAll('#mod-grid .card');
+    modFilters.forEach(button => button.addEventListener('click', () => {
+      modFilters.forEach(item => item.classList.toggle('active', item === button));
+      modCards.forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
+    }));
+    const packFilters = document.querySelectorAll('#packs-panel .filter');
+    const packCards = document.querySelectorAll('#pack-grid .card');
+    packFilters.forEach(button => button.addEventListener('click', () => {
+      packFilters.forEach(item => item.classList.toggle('active', item === button));
+      packCards.forEach(card => card.hidden = button.dataset.packFilter !== 'all' && card.dataset.packCategory !== button.dataset.packFilter);
+    }));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
