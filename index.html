@@ -247,3 +247,5 @@
 
 
 
+<!-- counter demo -->
+<script>const demoBadge=document.createElement('aside');demoBadge.setAttribute('aria-label','Демо-счётчик: число не отражает реальных посетителей');demoBadge.textContent='ДЕМО · 20 человек на сайте';demoBadge.style.cssText='position:fixed;right:20px;bottom:20px;z-index:20;padding:12px 16px;border:1px solid #ff4963;border-radius:10px;background:#1d070e;color:#fff;font:700 12px Manrope,sans-serif;box-shadow:0 8px 28px #0009';document.body.append(demoBadge);let demoCount=20;setInterval(()=>{const target=20+Math.floor(Math.random()*31);demoCount=target;demoBadge.textContent='ДЕМО · '+demoCount+' человек на сайте';},6500);</script>
